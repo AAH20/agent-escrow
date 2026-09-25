@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-escrow"
+version = "1.0.0"
+description = "Verifiable Work & Programmatic Escrow Settlement Protocol for Autonomous AI Labor"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Ahmed Hassan"}
+]
+keywords = [
+    "ai-agents",
+    "agent-economy",
+    "smart-escrow",
+    "verifiable-work",
+    "proof-of-task",
+    "autonomous-labor",
+    "settlement-protocol"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+
+[project.scripts]
+agent-escrow = "agent_escrow.cli:main"
